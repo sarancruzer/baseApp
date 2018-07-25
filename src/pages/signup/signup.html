@@ -1,0 +1,28 @@
+<ion-content padding class="loginbackground">
+    <h3>Signup</h3>
+    <form>
+      <div class="login-logo">
+        <img src="../../assets/imgs/newlogo.png" /> 
+      </div>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>  <ion-icon name="person"></ion-icon>USERNAME</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>  <ion-icon name="lock"></ion-icon> PASSWORD</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+  
+      </ion-list>
+  
+      <ion-list>
+        <button ion-button full (click)="doSignup()">Register </button>
+      </ion-list>
+    </form>
+    <div class="login-footer">
+      Already have an account ? <a href="#" (click)="loginCall()">Back</a>
+    </div>
+  </ion-content>
+  

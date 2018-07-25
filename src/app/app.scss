@@ -1,0 +1,86 @@
+// http://ionicframework.com/docs/theming/
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.menu-list {
+  margin: 10px 0 16px;
+  button {
+    color: rgb(102, 102, 102);
+    font-weight: lighter;
+  }
+  ion-icon {
+    color: #b1b1b0;
+  }
+    .list-md .item-block .item-inner {
+        border-bottom: 1px solid #ffffff !important;
+    }
+}
+
+.menu-header {
+  .menu-toolbar {
+    text-align: center;
+  }
+
+  img {
+    width: 100px;
+    margin: 12px 0 0 0;
+    text-align: center;
+    background: #36afe6;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px;
+  }
+  p {
+    background: #5ad1e2;
+    border-radius: 50px;
+    color: #fff;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    margin: 10px auto;
+    height: 80px;
+    width: 80px;
+  }
+  h2 {
+    font-weight: lighter;
+    color: #5ad1e2;
+    font-size: 22px;
+    font-family: cursive;
+  }
+  h4 {
+    font-weight: lighter;
+    color: #ccc;
+    font-size: 14px;
+    font-family: cursive;
+  }
+}
+
+
+.toolbar {
+    &.toolbar-md { //material design only
+        &.home-nav {
+            position: relative;
+            .title-md { //material design only
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
