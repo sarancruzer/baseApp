@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular/';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { DashboardPage } from '../dashboard/dashboard';
 import { SignupPage } from '../signup/signup';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Generated class for the LoginPage page.
@@ -22,42 +23,13 @@ export class LoginPage {
 
   submitAttempt: boolean = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,public translateService: TranslateService) {
 
     //  this.initForm();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
-  }
-
-  // Attempt to login in through our User service
-  doLogin() {
-    this.submitAttempt = true;
-    this.navCtrl.setRoot(DashboardPage);
-
-    // if (this.form.valid) {
-    //   this._loginProvider
-    //     .login(this.form.value)
-    //     .subscribe(
-    //       res => {
-    //         console.log(res.token);
-    //         const token = res.token;
-    //         const project_id = res.project_id;
-    //         localStorage.setItem("token", token);
-    //         localStorage.setItem("project_id", project_id);
-    //           this.navCtrl.setRoot();
-
-    //       },
-    //       err => {
-    //         if (err.status === 404) {
-    //           this._commonProvider.showToaster(JSON.parse(err._body).invalid);
-    //         } else {
-    //           this._commonProvider.showToaster("Try again later");
-    //         }
-    //       }
-    //     );
-    // }
   }
 
 
@@ -68,8 +40,14 @@ export class LoginPage {
     });
   }
 
+  // Attempt to login in through our User service
+  doLogin() {
+    this.submitAttempt = true;
+    this.navCtrl.setRoot(DashboardPage);    
+  }
+  
   signupCall() {
-    this.navCtrl.setRoot(SignupPage);
+    this.navCtrl.push(SignupPage);
   }
 
 

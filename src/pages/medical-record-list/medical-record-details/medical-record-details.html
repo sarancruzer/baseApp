@@ -1,6 +1,29 @@
-<ion-tabs>
+<!-- <ion-tabs>
     <ion-tab [root]="assitancesRoot" tabTitle="Assitances" tabIcon="information-circle"></ion-tab>
     <ion-tab [root]="medicalTestRoot" tabTitle="Medical test" tabIcon="information-circle"></ion-tab>
     <ion-tab [root]="pastAppointmentsRoot" tabTitle="Past appointments" tabIcon="information-circle"></ion-tab>
     <ion-tab [root]="relatedDocumentsRoot" tabTitle="Related documents" tabIcon="information-circle"></ion-tab>
-</ion-tabs>
+</ion-tabs> -->
+
+<ion-header no-border-bottom >
+
+    <ion-navbar color="primary" class="home-nav">
+        <ion-title >{{title}}</ion-title>
+        <button ion-button menuToggle  >
+            <ion-icon name="menu"></ion-icon>
+          </button>   
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content class="animated slideInLeft">
+
+<super-tabs id="mainTabs" selectedTabIndex="0" toolbarColor="dark" toolbarBackground="light" indicatorColor="primary" badgeColor="dark" [config]="{ sideMenu: 'left' }" (tabSelect)="onTabSelect($event)">
+
+    <super-tab [root]="assitancesRoot" title="{{ 'ASSITANCES_TAB_TITLE' | translate }}"  icon="podium" id="homeTab"></super-tab>
+    <super-tab [root]="medicalTestRoot" title="{{ 'MEDICAL_TEST_TAB_TITLE' | translate }}" icon="list-box" id="locationTab"></super-tab>
+    <super-tab [root]="pastAppointmentsRoot" title="{{ 'PAST_APPOINTMENTS_TAB_TITLE' | translate }}" icon="calendar" id="favouritesTab"></super-tab>
+    <super-tab [root]="relatedDocumentsRoot" title="{{ 'RELATED_DOCUMENTS_TAB_TITLE' | translate }}" icon="document" id="favouritesTab"></super-tab>
+  </super-tabs>
+
+</ion-content>  

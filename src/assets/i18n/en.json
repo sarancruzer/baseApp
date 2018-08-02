@@ -1,0 +1,102 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+
+  "EMAIL": "Email",
+  "USERNAME": "User Name",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign In",
+  "SIGNUP": "Sign up",
+
+  "HOME_MENU": "Home",
+  "MEDICAL_RECORD_MENU": "Medical record",
+  "NEXT_APPOINTMENTS_MENU": "Next Appointments",
+  "PERSONAL_DATA_MENU": "Personal Data",
+  "TEST_VIDEOCALL_MENU": "Test Videocall",
+  "CLOSE_SESSION_MENU": "Close session",
+
+
+  "DASHBOARD_TITLE":"Dashboard",
+  "MEDICAL_RECORD_TITLE": "Medical History",
+  "NEXT_APPOINTMENTS_TITLE": "Next Appointments",
+  "PAST_APPOINTMENTS_TITLE": "Next Appointments",
+  "PERSONAL_DATA_TITLE": "Personal Data",
+  "TEST_CONNECTION_TITLE": "Test Call",  
+  
+
+  "ASSITANCES_TAB_TITLE": "Assitances",
+  "MEDICAL_TEST_TAB_TITLE": "Medical Test",
+  "PAST_APPOINTMENTS_TAB_TITLE": "Past Appointments",
+  "RELATED_DOCUMENTS_TAB_TITLE": "Related Documents",
+
+  
+  "MEDICAL_RECORD": "Medical Record",
+  "PERSONAL_DATA": "Personal Data",
+  "TEST_CONNECTION": "Test Connection",
+
+  "NAME":"Name",
+  "SURENAME":"Surename",
+  "AGE":"Age",
+  "DATE_OF_BIRTH":"Date of Birth",
+  "ADDRESS":"Address (city)",
+  
+
+  "AT":"at",
+
+  "TAB1_TITLE": "Items",
+  "TAB2_TITLE": "Search",
+  "TAB3_TITLE": "Settings",
+
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to use the Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+
+  "WELCOME_INTRO": "The starting point for your next great Ionic app",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Sign in",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+}

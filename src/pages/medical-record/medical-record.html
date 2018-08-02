@@ -6,16 +6,47 @@
 -->
 <ion-header>
 
-    <ion-navbar color="primary" class="home-nav">
-        <ion-title >Medical Record</ion-title>
-        <button ion-button menuToggle  >
-            <ion-icon name="menu"></ion-icon>
-          </button>   
-    </ion-navbar>
+  <ion-navbar color="primary" class="home-nav">
+    <ion-title>{{ 'MEDICAL_RECORD_TITLE' | translate }}</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
 
 </ion-header>
 
+<ion-content padding class="animated slideInLeft"> 
 
-<ion-content padding>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+   
+<ion-list>
+<ion-item-sliding class="" *ngFor="let i of items" >
+  <button ion-item (click)="openItem('Politraumatismos')">
+    <h4>Politraumatismos </h4>
+    <p>11/09/2012 - 09/06/2014 </p>
+    <ion-note item-end>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-note>
+  </button>
+</ion-item-sliding>
+
+<button ion-item *ngIf="norecord" class="no-record">
+  <h4> No more records</h4>
+</button>
+</ion-list>
+
+
+
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!norecord">
+  <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Loading more data...">      
+  </ion-infinite-scroll-content>            
+</ion-infinite-scroll>
+
 
 </ion-content>

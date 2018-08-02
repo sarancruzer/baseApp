@@ -4,15 +4,40 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Medical Test</ion-title>
-  </ion-navbar>
-
-</ion-header>
+<ion-content padding class="animated slideInLeft">
 
 
-<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+   
+<ion-list>
+<ion-item-sliding class="" *ngFor="let i of items" >
+  <button ion-item (click)="openModal('Politraumatismos')">
+    <h4>Politraumatismos </h4>
+    <p>11/09/2012  </p>
+    <ion-note item-end>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-note>
+  </button>
+</ion-item-sliding>
+
+<button ion-item *ngIf="norecord" class="no-record">
+  <h4> No more records</h4>
+</button>
+</ion-list>
+
+
+
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!norecord">
+  <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Loading more data...">      
+  </ion-infinite-scroll-content>            
+</ion-infinite-scroll>
+
+
+
 
 </ion-content>

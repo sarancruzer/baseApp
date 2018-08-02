@@ -1,0 +1,117 @@
+<!-- 
+<ion-header>
+
+  <ion-navbar color="primary" class="home-nav">
+    <ion-title>{{ 'PERSONAL_DATA_TITLE' | translate }}</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="avatar common_padding">
+      <ion-item text-center class="imagebg" no-padding>
+        <ion-icon name="contact" class="avatar-img"></ion-icon>
+        <i class="fa fa-camera" aria-hidden="true" class="avatar-camera" (click)="presentActionSheet()"></i>
+
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="profile-content">
+
+      <ion-list>
+        <ion-item>
+          <ion-label floating>{{ 'NAME' | translate }}:</ion-label>
+          <ion-input type="text" disabled="true" value="Saravanan Nandhan"></ion-input>
+        </ion-item>
+        
+
+        <ion-item>
+          <ion-label floating>{{ "SURENAME" | translate }}:</ion-label>
+          <ion-input type="text" disabled="true" value="Nandhan"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "AGE" | translate }}:</ion-label>
+          <ion-input type="text" disabled="true" value="27"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "DATE_OF_BIRTH" | translate }}:</ion-label>
+          <ion-input type="text" disabled="true" value="05-04-1990"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "ADDRESS" | translate }}:</ion-label>
+          <ion-textarea type="text" disabled="true" value="No 17 Chennai"></ion-textarea>
+        </ion-item>
+
+      </ion-list>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content> -->
+
+<ion-header>
+
+  <ion-navbar color="primary" class="home-nav">
+    <ion-title>{{ 'PERSONAL_DATA_TITLE' | translate }}</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="animated zoomIn fast">
+  <ion-card class="profile-top">
+    <ion-row>
+
+      <ion-col col-9 class="col-10">
+        <div class="profile-photo">
+          <img src="../../assets/imgs/hero_historial.jpg" class="imgs">
+          <!-- <div class="imgs"><i class="fa fa-user avatar-icon" aria-hidden="true"  ></i></div> -->
+          <!-- <i class="fa fa-user avatar-icon" aria-hidden="true"  ></i>           -->
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="col-2">
+         <i class="fa fa-camera camera-icon" (click)="presentActionSheet()"  aria-hidden="true"  style="zoom:2.5;"></i>
+      </ion-col>
+
+    </ion-row>
+  </ion-card>
+  <ion-list class="profile-detail">   
+    <ion-item icon-left>
+      <h2> {{ 'NAME' | translate }}:</h2>
+      <p>Placeholder</p>
+    </ion-item>
+
+    <ion-item icon-left>
+      <h2> {{ 'SURENAME' | translate }}</h2>
+      <p>Placeholder</p>
+    </ion-item>
+
+    <ion-item icon-left>
+      <h2> {{ 'AGE' | translate }}</h2>
+      <p>Placeholder</p>
+    </ion-item>
+
+    <ion-item icon-left>
+      <h2> {{ 'DATE_OF_BIRTH' | translate }}</h2>
+      <p>Placeholder</p>
+    </ion-item>
+
+    <ion-item icon-left>
+      <h2> {{ 'ADDRESS' | translate }}</h2>
+      <p>Placeholder</p>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

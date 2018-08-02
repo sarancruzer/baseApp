@@ -3,46 +3,66 @@ page-login {
     background: linear-gradient(
       to bottom,
       rgba(17, 186, 207, 1) 0%,
-      rgba(37, 114, 134, 1) 30%,
+      rgba(37, 114, 134, 1) 40%,
       rgba(37, 114, 134, 1) 50%,
       rgba(37, 114, 134, 1) 8 70%,
       rgba(60, 155, 185, 1) 100%
     );
     width: 100%;
     height: 100%;
+    min-height: 100%;
+    // max-height: fit-content;        
     position: relative;
-    h3 {
+    
+    h5 {
       color: rgba(255, 255, 255, 0.5);
       text-align: center;
-      font-size: 14px;
       padding: 15px 0px;
-      font-weight: lighter !important;
     }
     .login-logo {
       width: 150px;
       margin: 0 auto;
       img {
-        margin: 0px 0;
-      }
+        margin: 10px 0;
+      }     
     }
-    ion-list {
+
+    ion-fixed{
+      width: 100% !important;
+    }
+
+    [ion-fixed] {
+      position: relative;
+    }
+
+    .list-md {
+      margin: 40px 0 16px;
+    }
+
+    form {
+
+      margin-top: 25px;
+      
       .item-md {
         background: transparent;
+        padding-right: 20px;
+        padding-left: 20px;
       }
       .button {
         position: absolute;
-        bottom: 50px;
-        width: 91%;
-        background: rgb(77, 208, 226);
+        // top: 500px;
+        width: 90%;
+        background: #4dd0e2;
         padding: 12px 0;
         height: 50px;
+        -webkit-box-shadow: none;
         box-shadow: none;
-        font-weight: lighter !important;
         text-transform: none;
+        margin-left: 17px;
+        transform: translateY(150px);
       }
       ion-label {
         color: rgb(14, 193, 216) !important;
-        font-family: 'Helvetica Neue'; 
         ion-icon {
           padding-right: 10px;
         }
@@ -52,17 +72,16 @@ page-login {
         color: #fff;
         input {
           padding-left: 20px;
-          font-weight: lighter !important;
         }
       }
     }
 
     .login-footer {
       position: absolute;
-      bottom: 20px;
+      // bottom: 20px;
+      top:550px;
       text-align: center;
       color: #ccc;
-      font-size: 12px;
       width: 100%;
       a {
         color: rgba(255, 255, 255, 0.5);
@@ -70,4 +89,12 @@ page-login {
       }
     }
   }
+
+ 
+
+
+  
+ 
+
 }
+

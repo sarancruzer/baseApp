@@ -7,26 +7,25 @@
 <ion-header no-border-bottom>
 
   <ion-navbar color="primary" class="home-nav">
-      <ion-title >dashboard</ion-title>
+      <ion-title >{{ 'DASHBOARD_TITLE' | translate }}</ion-title>
       <button ion-button menuToggle  >
           <ion-icon name="menu"></ion-icon>
         </button>   
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content >
+<ion-content padding class="animated slideInLeft">
   
     <div class="dashboard-logo">
         <img  src="../../assets/imgs/logo-blue.png" /> 
     </div>
 
-    <ion-grid class="dashboard-shortcuts"> 
+    <ion-grid class="dashboard-shortcuts "> 
         <ion-row >
-          <ion-col class="history-img">            
+          <ion-col class="history-img" (click)="medicalHistoryCall()">            
               <div class="myOverlay">
-                  <h2 >Medical History</h2>
+                  <h2 >{{ "MEDICAL_RECORD" | translate }}</h2>
                </div>
             <img src="../../assets/imgs/hero_historial.jpg" /> 
           </ion-col>
@@ -39,14 +38,15 @@
           </ion-row>
 
         <ion-row >
-          <ion-col class="bottom-col contact">
+          <ion-col class="bottom-col contact" (click)="personalDataCall()">
               <!-- <img src="../../assets/imgs/hero_historial.jpg" />  -->
-              <ion-icon name="contact" style="zoom:3.0;"></ion-icon>
-              <h3>Personal data</h3>
+              <i class="fa fa-user-circle-o" aria-hidden="true" style="zoom:2.5;"></i>
+              <h3>{{ 'PERSONAL_DATA' | translate }}</h3>
           </ion-col>       
-          <ion-col class="bottom-col wifi">
-            <ion-icon name="ios-wifi" style="zoom:3.0;"></ion-icon>
-            <h3>Test Connection</h3>
+          <ion-col class="bottom-col wifi" (click)="TestConnectionCall()">
+            <i class="fa fa-wifi" aria-hidden="true" style="zoom:2.5;"></i>
+
+            <h3>{{ 'TEST_CONNECTION' | translate }}</h3>
               <!-- <img src="../../assets/imgs/hero_historial.jpg" />  -->
           </ion-col>
         </ion-row>

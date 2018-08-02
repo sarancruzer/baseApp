@@ -40,10 +40,11 @@ $colors: (
   // light:      #f4f4f4,
   // dark:       #222
   primary:    #305fbf,
-  secondary:  #d1dfd5,
+  secondary:  #2196F3,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  white : #fff
 );
 
 
@@ -91,3 +92,37 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/open-sans/OpenSans-Regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url('../assets/fonts/open-sans/OpenSans-Semibold-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../assets/fonts/open-sans/OpenSans-Bold-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: extra-bold;
+  font-weight: 900;
+  src: url('../assets/fonts/open-sans/OpenSans-ExtraBold-webfont.ttf');
+}
+
+
+$text-input-md-highlight-color: #4dd0e2;
+

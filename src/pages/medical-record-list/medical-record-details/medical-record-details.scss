@@ -1,3 +1,39 @@
 page-medical-record-details {
+  super-tabs {
+    .title {
+      text-transform: capitalize;
+    }
 
+    super-tab-button {      
+        height: 64px !important;
+        padding-top: 5px !important;
+
+        span {
+          white-space: initial;
+          word-wrap: initial;
+          font-size: 12px;
+        }
+
+        ion-icon {
+          margin-bottom: 0px !important;
+        }
+    }
+
+    
+  }
+
+
+
+  #mainTabs > super-tabs-toolbar > ion-toolbar > div.toolbar-content.toolbar-content-md > div > div.tab-buttons > super-tab-button.selected.title-and-icon {
+    background: #305fbf;
+
+    ion-icon {
+      color : #fff;
+    }
+    span {
+      color : #fff;
+    }
+    
+  }
+  
 }

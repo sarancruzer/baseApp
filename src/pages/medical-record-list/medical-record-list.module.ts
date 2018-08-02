@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'ionic-angular/';
 import { MedicalRecordListPage } from './medical-record-list';
 import { AssitancesPageModule } from './assitances/assitances.module';
 import { MedicalRecordDetailsPageModule } from './medical-record-details/medical-record-details.module';

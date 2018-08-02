@@ -1,3 +1,27 @@
 page-medical-record {
 
+    ion-item-sliding {
+        h4 {
+            color: #524e4e;
+        }
+
+        p {
+            color : #8f9698 !important;
+        }
+    }
+
+    .no-record {
+        text-align: center;
+        font-size: 30px;
+        border-top: 1px solid #ccc;
+        padding: 5px;     
+        ion-label{
+            color:#6b6b6b;    
+        }   
+    }
+    .list-md {
+        margin: 0;
+    }
+
+    
 }

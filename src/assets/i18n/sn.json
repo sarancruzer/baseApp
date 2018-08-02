@@ -1,0 +1,119 @@
+{
+  "EMAIL": "correo electrónico",
+  "USERNAME": "usuario",
+  "PASSWORD": "contraseña",
+  "LOGIN": "iniciar sesión",
+  "SIGNUP": "Regístrate",
+
+  "HOME_MENU": "Inicio",
+  "MEDICAL_RECORD_MENU": "Historia Clinica",
+  "NEXT_APPOINTMENTS_MENU": "Proximas citas",
+  "PERSONAL_DATA_MENU": "Datos personales",
+  "TEST_VIDEOCALL_MENU": "Prueba la conexión",
+  "CLOSE_SESSION_MENU": "Cerror sesion",
+
+  "DASHBOARD_TITLE":"Inicio",
+  "MEDICAL_RECORD_TITLE": "Historia Clinica",
+  "NEXT_APPOINTMENTS_TITLE": "Próximas citas",
+  "PAST_APPOINTMENTS_TITLE": "Nombramientos pasados",
+  "PERSONAL_DATA_TITLE": "Datos personales",
+  "TEST_CONNECTION_TITLE": "Prueba la conexión",
+
+  
+  
+  "ASSITANCES_TAB_TITLE": "Asistencias",
+  "MEDICAL_TEST_TAB_TITLE": "pruebas",
+  "PAST_APPOINTMENTS_TAB_TITLE": "citas",
+  "RELATED_DOCUMENTS_TAB_TITLE": "Documentos ",
+
+  "MEDICAL_RECORD": "Historia Clinica",
+  "PERSONAL_DATA": "Datos personales",
+  "TEST_CONNECTION": "Prueba la conexión",
+
+
+  "NAME":"Nombre",
+  "SURENAME":"Apellidos",
+  "AGE":"Edad",
+  "DATE_OF_BIRTH":"Fecha de nacin",
+  "ADDRESS":"Localidad",
+
+  "AT":"a las",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  "TAB1_TITLE": "Maaitemu",
+  "TAB2_TITLE": "Tsvaga",
+  "TAB3_TITLE": "Gadziro",
+
+  "MAP_TITLE": "Mepu",
+
+  "TUTORIAL_SKIP_BUTTON": "Darika",
+  "TUTORIAL_CONTINUE_BUTTON": "Enderera",
+
+  "TUTORIAL_SLIDE1_TITLE": "Tinokugachirai ku Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> i Ionic Starter yakarungwa zvakakwanira nemapeji akagadzirwa kare nenzira dzakanaka dzinotenderwa",
+
+  "TUTORIAL_SLIDE2_TITLE": "Mashandisiro  eSuper Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Kororodza mapeji akasiyana siyana aunoda ,uchibvisa ayo ausingadi, Tapa huwarirwa hwakawanda unozivikanwa sokunge mapeji e login ne sign up,tabs uye peji rino rechidzidzo",
+
+  "TUTORIAL_SLIDE3_TITLE": "Kuvamba matangiro",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Unotsvaga rubatsiro? Ongorora Super Starter README kuti uwane chidzidzo chizere",
+
+  "TUTORIAL_SLIDE4_TITLE": "Wagadzirira kutamba?",
+
+  "WELCOME_INTRO": "Pekutangira kwako kugadzira jikichidzo guru yeIonic",
+
+  "SETTINGS_TITLE": "Gadziro",
+  "SETTINGS_OPTION1": "Sarudzo yekutanga",
+  "SETTINGS_OPTION2": "Sarudzo yepiri",
+  "SETTINGS_OPTION3": "Sarudzo yechitatu",
+  "SETTINGS_OPTION4": "Sarudzo yechina",
+
+  "SETTINGS_PROFILE_BUTTON": "Pepeta Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Pepeta Profile",
+
+  "WELCOME_TITLE": "Tinokuchingamidza",
+
+  "LOGIN_TITLE": "Sign mu",
+  "LOGIN_ERROR": "Takundikana kuita sign in. Tinokumbirawo mutarire homwe yenyu yejikichidzo mugoedza zvakare",
+  "LOGIN_BUTTON": "Sign mu",
+  "SIGNUP_TITLE": "Gadzira homwe yejikichidzo",
+  "SIGNUP_ERROR": "Takundikana kugadzira homwe yejikichidzo ,Tinokumbirawo mutarire zvakatarwa pahomwe yenyu yejikichidzo moedza zvakare.",
+  "SIGNUP_BUTTON": "Gadzira homwe yejikichidzo",
+
+  "LIST_MASTER_TITLE": "maaitemu",
+
+  "ITEM_CREATE_TITLE": "Aitemu itsva",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Wedzera mufananidzo",
+
+  "ITEM_NAME_PLACEHOLDER": "Zita",
+  "ITEM_ABOUT_PLACEHOLDER": "Nezve",
+
+  "DONE_BUTTON": "aita",
+  "CANCEL_BUTTON": "kanzura",
+  "DELETE_BUTTON": "Dzima",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Tsvaga",
+  "SEARCH_PLACEHOLDER": "Tsvaga mumaaitemu sokuti \"Donald Duck\""
+}
