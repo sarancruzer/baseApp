@@ -55,6 +55,7 @@ export class AssitancesPage {
       }, 500);
     }else{
       this.norecord = true;
+      this._commonProvider.showToast("NO_MORE_DATA","bottom");
       infiniteScroll.complete();
     }
   }
@@ -69,6 +70,6 @@ export class AssitancesPage {
   }
 
   openItem() {
-    this._commonProvider.showToast("Coming soon page!");
+    this._commonProvider.showToast("Coming soon page!","top");
   }
 }

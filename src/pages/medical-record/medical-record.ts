@@ -48,7 +48,9 @@ export class MedicalRecordPage {
         infiniteScroll.complete();
       }, 500);
     }else{
+
       this.norecord = true;
+      this._commonProvider.showToast("NO_MORE_DATA","bottom");
       infiniteScroll.complete();
     }
   }

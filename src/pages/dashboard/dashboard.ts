@@ -1,3 +1,4 @@
+import { DataProvider } from './../../providers/data/data';
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular/";
 import { FormControl } from "@angular/forms";
@@ -19,14 +20,17 @@ import { TestCallPage } from "../test-call/test-call";
   templateUrl: "dashboard.html"
 })
 export class DashboardPage {
- 
+  searchTerm: string = '';
+  items: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  searchFlag = true;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _dataProvider: DataProvider) {
     
   }
 
   ionViewDidLoad() {
-   
+    this.setFilteredItems();
   }
 
   medicalHistoryCall() {
@@ -42,6 +46,16 @@ export class DashboardPage {
   TestConnectionCall() {
     console.log("TestConnectionCall");
     this.navCtrl.push(TestCallPage);
+  }
+
+  setFilteredItems() { 
+    this.searchFlag = true;
+    this.items = this._dataProvider.filterItems(this.searchTerm);
+  }
+
+  selectedItem(item) {
+    this.searchTerm = item.title;
+   // this.searchFlag = false;
   }
 
   

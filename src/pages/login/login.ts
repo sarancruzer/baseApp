@@ -5,12 +5,6 @@ import { DashboardPage } from '../dashboard/dashboard';
 import { SignupPage } from '../signup/signup';
 import { TranslateService } from '@ngx-translate/core';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -25,11 +19,12 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,public translateService: TranslateService) {
 
-    //  this.initForm();
+    this.initForm();
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad LoginPage');    
   }
 
 
@@ -43,7 +38,12 @@ export class LoginPage {
   // Attempt to login in through our User service
   doLogin() {
     this.submitAttempt = true;
-    this.navCtrl.setRoot(DashboardPage);    
+
+    if(this.loginForm.valid){
+      this.navCtrl.setRoot(DashboardPage);      
+    }
+
+    
   }
   
   signupCall() {

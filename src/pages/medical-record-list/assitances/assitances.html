@@ -25,7 +25,7 @@
 </ion-item-sliding>
 
 <button ion-item *ngIf="norecord" class="no-record">
-  <h4> No more records</h4>
+    <h4> {{ 'NO_MORE_DATA' | translate}} </h4>
 </button>
 </ion-list>
 
@@ -34,9 +34,8 @@
 <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!norecord">
   <ion-infinite-scroll-content
     loadingSpinner="bubbles"
-    loadingText="Loading more data...">      
+    loadingText="{{ 'LOADING_MORE_DATA' | translate }}...">      
   </ion-infinite-scroll-content>            
 </ion-infinite-scroll>
-
 
 </ion-content>

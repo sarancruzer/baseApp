@@ -41,6 +41,10 @@
   
 
   "AT":"at",
+  "DOCUMENT_MODAL_TITLE":"Document",
+
+  "LOADING_MORE_DATA" : "Loading more data",
+  "NO_MORE_DATA" : "No more records",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Search",

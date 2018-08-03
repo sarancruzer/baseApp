@@ -28,14 +28,19 @@
   <button ion-item (click)="openItem(item)">
     <h4>Radiologia {{i}}</h4>
     <p>22/06/2010 {{ 'AT' | translate }} 17:00  </p>
+    <ion-note item-end class="remote_type">
+      Precential
+    </ion-note>
     <ion-note item-end>
       <ion-icon name="arrow-forward"></ion-icon>
     </ion-note>
   </button>
+
+
 </ion-item-sliding>
 
 <button ion-item *ngIf="norecord" class="no-record">
-  <h4> No more records</h4>
+    <h4> {{ 'NO_MORE_DATA' | translate }} </h4>
 </button>
 </ion-list>
 
@@ -44,7 +49,7 @@
 <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!norecord">
   <ion-infinite-scroll-content
     loadingSpinner="bubbles"
-    loadingText="Loading more data...">      
+    loadingText="{{ 'LOADING_MORE_DATA' | translate }}...">      
   </ion-infinite-scroll-content>            
 </ion-infinite-scroll>
 

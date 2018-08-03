@@ -36,13 +36,9 @@ import { RequestInterceptor } from "../interceptors/request-interceptor";
 import { AppointmentsProvider } from '../providers/appointments/appointments';
 
 import { Camera } from '@ionic-native/camera';
+import { DataProvider } from '../providers/data/data';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { Pro } from '@ionic/pro';
-
-
-Pro.init('56186D32', {
-  appVersion: '1.0.0'
-})
 
 @NgModule({
   declarations: [MyApp],
@@ -57,16 +53,17 @@ Pro.init('56186D32', {
       }
     }),
     HttpClientModule,
-    LoginPageModule,
-    SignupPageModule,
-    DashboardPageModule,
-    MedicalRecordPageModule,
-    AppointmentsPageModule,
-    MedicalRecordListPageModule,
-    ProfilePageModule,
-    TestCallPageModule,
-    LogoutPageModule,
-    ModalsPageModule
+    ReactiveFormsModule,
+      LoginPageModule,
+      SignupPageModule,
+      DashboardPageModule,
+      MedicalRecordPageModule,
+      AppointmentsPageModule,
+      MedicalRecordListPageModule,
+      ProfilePageModule,
+      TestCallPageModule,
+      LogoutPageModule,
+      ModalsPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
@@ -79,7 +76,8 @@ Pro.init('56186D32', {
     { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ResponseInterceptor, multi: true },
     AppointmentsProvider,
-    Camera
+    Camera,
+    DataProvider
   ]
 })
 export class AppModule {

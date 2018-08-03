@@ -57,7 +57,7 @@
 
 </ion-content> -->
 
-<ion-header>
+<ion-header class="animated slideInLeft fast">
 
   <ion-navbar color="primary" class="home-nav">
     <ion-title>{{ 'PERSONAL_DATA_TITLE' | translate }}</ion-title>
@@ -69,13 +69,13 @@
 </ion-header>
 
 
-<ion-content class="animated zoomIn fast">
+<ion-content class="animated slideInLeft fast">
   <ion-card class="profile-top">
     <ion-row>
 
       <ion-col col-9 class="col-10">
         <div class="profile-photo">
-          <img src="../../assets/imgs/hero_historial.jpg" class="imgs">
+          <img src="../../assets/imgs/hero_historial.jpg" class="imgs" (click)="presentActionSheet()" >
           <!-- <div class="imgs"><i class="fa fa-user avatar-icon" aria-hidden="true"  ></i></div> -->
           <!-- <i class="fa fa-user avatar-icon" aria-hidden="true"  ></i>           -->
         </div>

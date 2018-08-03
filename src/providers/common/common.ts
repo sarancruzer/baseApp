@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { ToastController } from 'ionic-angular/';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -11,16 +12,22 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class CommonProvider {
 
-  constructor(public http: HttpClient,private toastCtrl: ToastController) {
+  constructor(public http: HttpClient,private toastCtrl: ToastController, private _translateService: TranslateService) {
     console.log('Hello CommonProvider Provider');
   }
 
-  showToast(message?:any):void {
+  showToast(message?:any,position?:any):void {
+
+    this._translateService.get(message).subscribe(
+      value => {
+        message = value;
+      }
+    )
 
     let toast = this.toastCtrl.create({
       message: message,
-      duration: 3000,
-      position: 'top'
+      duration: 2500,
+      position: position
     });
 
     toast.onDidDismiss(() => {

@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   imports: [
     IonicPageModule.forChild(MedicalTestPage),
-    TranslateModule.forChild()
+    TranslateModule
   ],
 })
 export class MedicalTestPageModule {}

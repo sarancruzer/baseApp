@@ -14,7 +14,7 @@
 
   "DASHBOARD_TITLE":"Inicio",
   "MEDICAL_RECORD_TITLE": "Historia Clinica",
-  "NEXT_APPOINTMENTS_TITLE": "Próximas citas",
+  "NEXT_APPOINTMENTS_TITLE": "Citas Pendientes",
   "PAST_APPOINTMENTS_TITLE": "Nombramientos pasados",
   "PERSONAL_DATA_TITLE": "Datos personales",
   "TEST_CONNECTION_TITLE": "Prueba la conexión",
@@ -39,11 +39,10 @@
 
   "AT":"a las",
 
+  "DOCUMENT_MODAL_TITLE":"Documento",
 
-
-
-
-
+  "LOADING_MORE_DATA" : "Cargando más datos",
+  "NO_MORE_DATA" : "No más registros",
 
 
 

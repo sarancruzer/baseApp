@@ -3,7 +3,7 @@
    <div ion-fixed>
   <h5>Sign In</h5>
 
-  <form class="list-form">
+  <form class="list-form" [formGroup]="loginForm">
     <div class="login-logo">
       <img src="../../assets/imgs/logo-white.png" />      
     </div>
@@ -13,14 +13,22 @@
         <ion-label floating>
           <i class="fa fa-user" aria-hidden="true"></i>
           {{ 'USERNAME' | translate }}</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" formControlName="username" ></ion-input>
       </ion-item>
+
+      <ion-item icon-left class="err"  *ngIf="!loginForm.controls.username.valid  && (loginForm.controls.username.dirty || submitAttempt)">
+            <p>Please enter a Username.</p>
+        </ion-item>      
 
       <ion-item icon-left>
         <ion-label floating>
           <i class="fa fa-key" aria-hidden="true"></i>
           {{ 'PASSWORD' | translate }}</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" formControlName="password"></ion-input>
+      </ion-item>
+
+      <ion-item icon-left class="err" *ngIf="!loginForm.controls.password.valid  && (loginForm.controls.password.dirty || submitAttempt)">
+          <p>Please enter a Password.</p>
       </ion-item>
 
       <button ion-button icon-start block color="dark" tappable (click)="doLogin()">
@@ -32,3 +40,44 @@
     </div>
 
 </ion-content>
+
+<!-- 
+<ion-content class="login-content">
+    <div class="login-logo">
+        <h5>Sign In</h5>
+        <img src="../../assets/imgs/logo-white.png" />      
+    </div>
+
+        <div class="login-form">
+            <form class="list-form" [formGroup]="loginForm">
+              
+                  <ion-item icon-left>
+                    <ion-label floating>
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      {{ 'USERNAME' | translate }}</ion-label>
+                    <ion-input type="text" formControlName="username" ></ion-input>
+                  </ion-item>
+            
+                  <ion-item icon-left class="err"  *ngIf="!loginForm.controls.username.valid  && (loginForm.controls.username.dirty || submitAttempt)">
+                        <p>Please enter a Username.</p>
+                    </ion-item>      
+            
+                  <ion-item icon-left>
+                    <ion-label floating>
+                      <i class="fa fa-key" aria-hidden="true"></i>
+                      {{ 'PASSWORD' | translate }}</ion-label>
+                    <ion-input type="text" formControlName="password"></ion-input>
+                  </ion-item>
+            
+                  <ion-item icon-left class="err" *ngIf="!loginForm.controls.password.valid  && (loginForm.controls.password.dirty || submitAttempt)">
+                      <p>Please enter a Password.</p>
+                  </ion-item>
+                         
+              </form>              
+        </div>
+
+        <div padding class="submit-btn">
+            <button ion-button (click)="iniciarSesionValidar()" color="royal"> Entrar </button>
+        </div>        
+
+</ion-content> -->

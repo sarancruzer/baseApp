@@ -5,6 +5,31 @@ page-dashboard {
     // border-bottom: 1px solid #ccc;
   }
 
+  .dashboard-search {
+    .remote_type {
+      margin-right:20px;
+      color: #ff000073;
+    }
+
+    .searchbar-search-icon { display:none; width:0; height:0; }
+
+    ion-list {
+      overflow-y: scroll;
+      height: 200px;
+    }
+
+    .searchbar-md .searchbar-input {
+      padding: 10px 20px;      
+      box-shadow: none;
+      font-size: 20px;
+    }
+    .searchbar-input-container{
+      border-top: 3px solid #ccc;
+      border-bottom: 3px solid #ccc;
+    }
+
+  }
+
   .scroll-content {
     padding: 0px !important;
   }
@@ -32,14 +57,17 @@ page-dashboard {
       opacity: 0.5;
       background: #0d1a33;
       color: #fff;
+
+      h2 {
+        text-align: left;
+        margin-left: 20%;      
+        font-weight: 500;
+        vertical-align: middle;
+        margin-top: 1.5rem !important;
+      }
     }
 
-    h2 {
-      text-align: center;      
-      font-weight: 500;
-      vertical-align: middle;
-      margin-top: 1.5rem !important;
-    }
+   
   }
 
   .bottom-col {
