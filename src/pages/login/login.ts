@@ -1,3 +1,4 @@
+import { CommonProvider } from './../../providers/common/common';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular/';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
@@ -17,7 +18,7 @@ export class LoginPage {
 
   submitAttempt: boolean = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,public translateService: TranslateService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,public translateService: TranslateService, private _commonProvider: CommonProvider) {
 
     this.initForm();
     
@@ -39,9 +40,10 @@ export class LoginPage {
   doLogin() {
     this.submitAttempt = true;
 
-    if(this.loginForm.valid){
-      this.navCtrl.setRoot(DashboardPage);      
-    }
+    //if(this.loginForm.valid){
+    //  this._commonProvider.showToast("Username or password incorrect!","top");
+      this.navCtrl.setRoot(DashboardPage);            
+   // }
 
     
   }

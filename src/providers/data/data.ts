@@ -14,11 +14,7 @@ export class DataProvider {
     console.log('Hello DataProvider Provider');  
     this.items = [
         {title: 'Dr.Javier'},
-        {title: 'Dr.Javier'},
-        {title: 'Dr.Daniel'},
-        {title: 'Dr.Thomas'},
-        {title: 'Dr.Thomas'},
-        {title: 'Dr.Albert'}
+        {title: 'Dr.Daniel'}        
     ]
   }
 

@@ -45,10 +45,8 @@
   "NO_MORE_DATA" : "No más registros",
 
 
-
-
-
-
+  "USERNAME_REQUIRED": "Por favor, ingrese un nombre de usuario",
+  "PASSWORD_REQUIRED": "Porfavor ingrese una contraseña",
 
 
 

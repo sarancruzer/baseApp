@@ -17,7 +17,7 @@
       </ion-item>
 
       <ion-item icon-left class="err"  *ngIf="!loginForm.controls.username.valid  && (loginForm.controls.username.dirty || submitAttempt)">
-            <p>Please enter a Username.</p>
+            <p> {{ 'USERNAME_REQUIRED' | translate }}</p>
         </ion-item>      
 
       <ion-item icon-left>
@@ -28,7 +28,7 @@
       </ion-item>
 
       <ion-item icon-left class="err" *ngIf="!loginForm.controls.password.valid  && (loginForm.controls.password.dirty || submitAttempt)">
-          <p>Please enter a Password.</p>
+          <p>{{ 'PASSWORD_REQUIRED' | translate }}.</p>
       </ion-item>
 
       <button ion-button icon-start block color="dark" tappable (click)="doLogin()">

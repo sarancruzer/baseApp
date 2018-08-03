@@ -15,7 +15,7 @@ page-dashboard {
 
     ion-list {
       overflow-y: scroll;
-      height: 200px;
+      height: 115px;
     }
 
     .searchbar-md .searchbar-input {
@@ -37,7 +37,8 @@ page-dashboard {
   .dashboard-shortcuts {
     padding: 0;
     position: absolute;
-    bottom: 0px;
+    // bottom: 0px;
+    margin-top:60px;
     .wifi {
       background: #f07570;
     }
