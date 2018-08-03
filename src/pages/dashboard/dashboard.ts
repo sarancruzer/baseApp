@@ -30,6 +30,7 @@ export class DashboardPage {
   }
 
   ionViewDidLoad() {
+    this.items = this._dataProvider.filterItems(this.searchTerm);
     this.setFilteredItems();
   }
 
@@ -50,7 +51,7 @@ export class DashboardPage {
 
   setFilteredItems() { 
     this.searchFlag = true;
-    this.items = this._dataProvider.filterItems(this.searchTerm);
+   // this.items = this._dataProvider.filterItems(this.searchTerm);
   }
 
   selectedItem(item) {
