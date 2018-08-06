@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="primary" class="home-nav">
-    <ion-title>{{ 'MEDICAL_RECORD_TITLE' | translate }}</ion-title>
+    <ion-title>{{ 'MEDICAL_RECORD_TITLE' | translate | limitTo : 20 }}</ion-title>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -15,7 +15,7 @@
 
 </ion-header>
 
-<ion-content padding class="animated slideInLeft"> 
+<ion-content padding > 
 
 
   <ion-refresher (ionRefresh)="doRefresh($event)">
@@ -23,16 +23,18 @@
   </ion-refresher>
 
    
-<ion-list>
-<ion-item-sliding class="" *ngFor="let i of items" >
+<ion-list class="myClass">
+<ion-item-sliding *ngFor="let i of items" class="animated slideInLeft fast"  >
   <button ion-item (click)="openItem('Politraumatismos')">
-    <h4>Politraumatismos </h4>
+    <h4>{{ "Politraumatismos" | limitTo : 20}}</h4>
     <p>11/09/2012 - 09/06/2014 </p>
     <ion-note item-end>
       <ion-icon name="arrow-forward"></ion-icon>
     </ion-note>
   </button>
 </ion-item-sliding>
+
+
 
 <button ion-item *ngIf="norecord" class="no-record">
   <h4> {{ 'NO_MORE_DATA' | translate}} </h4>
@@ -50,3 +52,5 @@
 
 
 </ion-content>
+
+

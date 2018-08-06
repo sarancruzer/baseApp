@@ -46,6 +46,10 @@
   "LOADING_MORE_DATA" : "Loading more data",
   "NO_MORE_DATA" : "No more records",
 
+  "USERNAME_REQUIRED": "Please enter a Username",
+  "PASSWORD_REQUIRED": "Please enter a Password",
+
+  
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Search",
   "TAB3_TITLE": "Settings",

@@ -1,6 +1,6 @@
-import { AppointmentsProvider } from './../../../providers/appointments/appointments';
+import { AppointmentsProvider } from '../../../providers/appointments/appointments';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular/';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CommonProvider } from '../../../providers/common/common';
 
 /**

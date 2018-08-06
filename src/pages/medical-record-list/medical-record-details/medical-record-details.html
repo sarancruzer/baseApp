@@ -8,7 +8,7 @@
 <ion-header no-border-bottom >
 
     <ion-navbar color="primary" class="home-nav">
-        <ion-title >{{title}}</ion-title>
+        <ion-title >{{ title | limitTo : 20 }}</ion-title>
         <button ion-button menuToggle  >
             <ion-icon name="menu"></ion-icon>
           </button>   
@@ -25,5 +25,14 @@
     <super-tab [root]="pastAppointmentsRoot" title="{{ 'PAST_APPOINTMENTS_TAB_TITLE' | translate }}" icon="calendar" id="favouritesTab"></super-tab>
     <super-tab [root]="relatedDocumentsRoot" title="{{ 'RELATED_DOCUMENTS_TAB_TITLE' | translate }}" icon="document" id="favouritesTab"></super-tab>
   </super-tabs>
+
+
+<!-- <super-tabs id="mainTabs" selectedTabIndex="0" toolbarColor="light" toolbarBackground="primary" indicatorColor="light" badgeColor="light" [config]="{ sideMenu: 'left' }" (tabSelect)="onTabSelect($event)">
+
+        <super-tab [root]="assitancesRoot" title="{{ 'ASSITANCES_TAB_TITLE' | translate }}"  icon="podium" id="homeTab"></super-tab>
+        <super-tab [root]="medicalTestRoot" title="{{ 'MEDICAL_TEST_TAB_TITLE' | translate }}" icon="list-box" id="locationTab"></super-tab>
+        <super-tab [root]="pastAppointmentsRoot" title="{{ 'PAST_APPOINTMENTS_TAB_TITLE' | translate }}" icon="calendar" id="favouritesTab"></super-tab>
+        <super-tab [root]="relatedDocumentsRoot" title="{{ 'RELATED_DOCUMENTS_TAB_TITLE' | translate }}" icon="document" id="favouritesTab"></super-tab>
+      </super-tabs> -->
 
 </ion-content>  

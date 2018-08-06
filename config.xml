@@ -3,7 +3,7 @@
     <name>Aplicacion paciente</name>
     <description>An Aplicacion paciente app.</description>
     <author email="haggsapp@gmail.com" href="https://haggsitc.com/">HAGGS IT SOLUTIONS</author>
-    <content original-src="index.html" src="http://192.168.1.17:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -18,7 +18,7 @@
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="SplashScreenDelay" value="3000" />
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="FadeSplashScreen" value="true" />
     <preference name="ShowSplashScreen" value="true" />
@@ -87,5 +87,5 @@
     <allow-navigation href="http://192.168.1.17:8100" />
     <allow-navigation href="http://192.168.1.17:8101" />
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
-    <engine name="android" spec="7.0.0" />
+    <engine name="android" spec="~7.0.0" />
 </widget>

@@ -1,6 +1,6 @@
-import { CommonProvider } from './../../providers/common/common';
+import { CommonProvider } from '../../providers/common/common';
 import { Component } from "@angular/core";
-import { IonicPage, NavController, NavParams } from "ionic-angular/";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
 
 import { MedicalRecordDetailsPage } from "../medical-record-list/medical-record-details/medical-record-details";
 
@@ -12,9 +12,7 @@ import { MedicalRecordDetailsPage } from "../medical-record-list/medical-record-
 export class MedicalRecordPage {
   
   items = [];
-
   norecord = false;
-
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -25,8 +23,10 @@ export class MedicalRecordPage {
 
 
   ionViewDidLoad() {
-    for (let i = 0; i < 15; i++) {
-      this.items.push(this.items.length);
+    let countVal=0;
+    for (let i = 0; i < 15; i++) {    
+      this.items.push({name:"",count:countVal});
+      countVal++;
     }
     console.log("ionViewDidLoad PastAppointmentsPage");
   }
@@ -41,8 +41,10 @@ export class MedicalRecordPage {
 
     if (count <= 30) {
       setTimeout(() => {
+        let countVal = 0;
         for (let i = 0; i < 15; i++) {
-          this.items.push(this.items.length);
+          this.items.push({name:"",count:countVal});
+          countVal++;
         }
         console.log("Async operation has ended");
         infiniteScroll.complete();
@@ -67,4 +69,11 @@ export class MedicalRecordPage {
   openItem(title) {
     this.navCtrl.push(MedicalRecordDetailsPage, { title:title });    
   }
+
+  
+  animateSlideLeft(i: any): any {      
+    return { 'animation-delay': i * 0.2+'s' };
+  }
+
+  
 }

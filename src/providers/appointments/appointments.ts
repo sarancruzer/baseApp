@@ -1,4 +1,4 @@
-import { ApiProvider } from './../api/api';
+import { ApiProvider } from '../api/api';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs/Observable';
@@ -14,13 +14,13 @@ export class AppointmentsProvider {
 
   apiUrl = environment.API_URL;
   
-  endpoint = "appointments";
+  endpoint = "students";
   constructor(private api: ApiProvider) {   
     
   }
 
-  getAppointment(params: string): Observable<any[]> {
-    return this.api.get(this.apiUrl,params);
+  getAppointment(params: any): Observable<any[]> {
+    return this.api.get(this.apiUrl + this.endpoint ,params);
   }
 
   createAppointment(body: any): Observable<any> {

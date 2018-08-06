@@ -1,3 +1,4 @@
+
 import { ResponseInterceptor } from './../interceptors/response-interceptor';
 import { BrowserModule } from "@angular/platform-browser";
 import { ErrorHandler, NgModule } from "@angular/core";
@@ -38,6 +39,7 @@ import { AppointmentsProvider } from '../providers/appointments/appointments';
 import { Camera } from '@ionic-native/camera';
 import { DataProvider } from '../providers/data/data';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PipesPageModule } from '../pipes/pipes.module';
 
 
 @NgModule({
@@ -63,7 +65,8 @@ import { ReactiveFormsModule } from '@angular/forms';
       ProfilePageModule,
       TestCallPageModule,
       LogoutPageModule,
-      ModalsPageModule
+      ModalsPageModule,
+      PipesPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],

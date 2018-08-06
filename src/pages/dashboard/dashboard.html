@@ -19,31 +19,33 @@
 
 <ion-content padding class="animated slideInLeft">
 
-    <div class="dashboard-search">
-    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()" autocomplete="on" cancelButtonText="Cancel" placeholder="{{ 'NEXT_APPOINTMENTS_MENU' | translate }}" showCancelButton="false" type="text" ></ion-searchbar> 
-
-    <ion-list *ngIf="searchFlag">
-        <ion-item-sliding class="" *ngFor="let item of items" >
-          <button ion-item (click)="selectedItem(item)">
-            <h4>{{ item.title }} </h4>
-            <p>22/06/2010 {{ 'AT' | translate }} 17:00  </p>
-            <ion-note item-end class="remote_type">
-              Precential
-            </ion-note>
-            <ion-note item-end>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </ion-note>
-          </button>
-        </ion-item-sliding>
-        </ion-list>
-
-    </div>
-
         
   
     <div class="dashboard-logo">
         <img  src="../../assets/imgs/logo-blue.png" /> 
     </div>
+
+
+    <div class="dashboard-search">
+        <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()" autocomplete="on" cancelButtonText="Cancel" placeholder="{{ 'NEXT_APPOINTMENTS_MENU' | translate }}" showCancelButton="false" type="text" ></ion-searchbar> 
+    
+        <ion-list *ngIf="searchFlag">
+            <ion-item-sliding class="" *ngFor="let item of items" >
+              <button ion-item (click)="selectedItem(item)">
+                <h4>{{ item.title | limitTo : 20 }} </h4>
+                <p>22/06/2010 {{ 'AT' | translate }} 17:00  </p>
+                <ion-note item-end class="remote_type">
+                  Precential
+                </ion-note>
+                <ion-note item-end>
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </ion-note>
+              </button>
+            </ion-item-sliding>
+            </ion-list>
+    
+        </div>
+    
 
     <ion-grid class="dashboard-shortcuts ">       
 

@@ -2,7 +2,7 @@
 // code base on: https://github.com/driftyco/ionic/blob/master/src/components/modal/modal-transitions.ts
 // animation base on: https://github.com/daneden/animate.css/blob/master/animate.css
 // v0.2
-import { Animation, PageTransition } from 'ionic-angular/';
+import { Animation, PageTransition } from 'ionic-angular';
 
 
 /* ==================================================

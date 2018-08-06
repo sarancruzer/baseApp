@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular/';
-import { ToastController } from 'ionic-angular/';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 import { CommonProvider } from '../../../providers/common/common';
 
 /**
@@ -72,4 +72,5 @@ export class AssitancesPage {
   openItem() {
     this._commonProvider.showToast("Coming soon page!","top");
   }
+  
 }

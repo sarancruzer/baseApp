@@ -1,10 +1,11 @@
-import { CommonProvider } from './../../providers/common/common';
+import { CommonProvider } from '../../providers/common/common';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular/';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { DashboardPage } from '../dashboard/dashboard';
 import { SignupPage } from '../signup/signup';
 import { TranslateService } from '@ngx-translate/core';
+import { MenuController } from 'ionic-angular/components/app/menu-controller';
 
 
 @IonicPage()
@@ -18,14 +19,24 @@ export class LoginPage {
 
   submitAttempt: boolean = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,public translateService: TranslateService, private _commonProvider: CommonProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,public translateService: TranslateService, private _commonProvider: CommonProvider, private menu: MenuController) {
 
     this.initForm();
+
+    this.menu = menu;
+
+    
     
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');    
+    this.menu.enable(false);
+  }
+
+  ionViewWillLeave() {
+    console.log('ionViewDidLoad LoginPage');    
+    this.menu.enable(true);
   }
 
 

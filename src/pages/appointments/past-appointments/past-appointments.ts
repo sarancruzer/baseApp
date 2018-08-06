@@ -1,7 +1,7 @@
-import { AppointmentsProvider } from "./../../../providers/appointments/appointments";
+import { AppointmentsProvider } from "../../../providers/appointments/appointments";
 import { CommonProvider } from "../../../providers/common/common";
 import { Component } from "@angular/core";
-import { IonicPage, NavController, NavParams } from "ionic-angular/";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
 
 /**
  * Generated class for the PastAppointmentsPage page.
@@ -33,6 +33,8 @@ export class PastAppointmentsPage {
     for (let i = 0; i < 15; i++) {
       this.items.push(this.items.length);
     }
+
+   // this.initLoad();
     console.log("ionViewDidLoad PastAppointmentsPage");
   }
 
@@ -61,8 +63,8 @@ export class PastAppointmentsPage {
 
   
 
-  getAppointments() {
-    this._provider.getAppointment("12").subscribe(res => {}, err => {});
+  initLoad() {
+    this._provider.getAppointment({flag:'past'}).subscribe(res => {}, err => {});
   }
 
   doRefresh(refresher) {

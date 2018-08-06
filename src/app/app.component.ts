@@ -1,7 +1,7 @@
 import { TestCallPage } from '../pages/test-call/test-call';
 import { NextAppointmentsPage } from '../pages/appointments/next-appointments/next-appointments';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform,NavController } from 'ionic-angular/';
+import { Nav, Platform,NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TranslateService } from '@ngx-translate/core';

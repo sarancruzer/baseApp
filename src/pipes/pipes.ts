@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { LoginPage } from '../login/login';
 
 /**
- * Generated class for the LogoutPage page.
+ * Generated class for the PipesPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,17 +10,16 @@ import { LoginPage } from '../login/login';
 
 @IonicPage()
 @Component({
-  selector: 'page-logout',
-  templateUrl: 'logout.html',
+  selector: 'page-pipes',
+  templateUrl: 'pipes.html',
 })
-export class LogoutPage {
+export class PipesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.navCtrl.setRoot(LoginPage);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LogoutPage');    
+    console.log('ionViewDidLoad PipesPage');
   }
 
 }

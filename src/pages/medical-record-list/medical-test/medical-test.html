@@ -15,7 +15,7 @@
 <ion-list>
 <ion-item-sliding class="" *ngFor="let i of items" >
   <button ion-item (click)="openModal('DOCUMENT_MODAL_TITLE')">
-    <h4>Politraumatismos </h4>
+    <h4>{{ "Politraumatismos" | limitTo : 20}}</h4>
     <p>11/09/2012  </p>
     <ion-note item-end>
       <ion-icon name="arrow-forward"></ion-icon>

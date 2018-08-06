@@ -1,6 +1,6 @@
 import { CommonProvider } from '../../../providers/common/common';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular/';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the RelatedDocumentsPage page.

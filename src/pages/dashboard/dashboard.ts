@@ -1,6 +1,6 @@
-import { DataProvider } from './../../providers/data/data';
+import { DataProvider } from '../../providers/data/data';
 import { Component } from "@angular/core";
-import { IonicPage, NavController, NavParams } from "ionic-angular/";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
 import { FormControl } from "@angular/forms";
 import "rxjs/add/operator/debounceTime";
 import { MedicalRecordPage } from "../medical-record/medical-record";

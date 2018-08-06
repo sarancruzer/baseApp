@@ -5,7 +5,7 @@ import {
   NavParams,
   ActionSheetController,
   ToastController
-} from "ionic-angular/";
+} from "ionic-angular";
 
 /**
  * Generated class for the ProfilePage page.

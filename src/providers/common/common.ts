@@ -1,5 +1,5 @@
 import { TranslateService } from '@ngx-translate/core';
-import { ToastController } from 'ionic-angular/';
+import { ToastController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
