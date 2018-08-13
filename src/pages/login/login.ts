@@ -49,7 +49,7 @@ export class LoginPage {
 
   // Attempt to login in through our User service
   doLogin() {
-    this.submitAttempt = true;
+  //  this.submitAttempt = true;
 
     //if(this.loginForm.valid){
     //  this._commonProvider.showToast("Username or password incorrect!","top");
